@@ -1,0 +1,6 @@
+C:\Users\Admin\source\repos\DotNetExample\bin\Debug\DotNetExample.exe.config
+C:\Users\Admin\source\repos\DotNetExample\bin\Debug\DotNetExample.exe
+C:\Users\Admin\source\repos\DotNetExample\bin\Debug\DotNetExample.pdb
+C:\Users\Admin\source\repos\DotNetExample\obj\Debug\DotNetExample.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\DotNetExample\obj\Debug\DotNetExample.exe
+C:\Users\Admin\source\repos\DotNetExample\obj\Debug\DotNetExample.pdb
