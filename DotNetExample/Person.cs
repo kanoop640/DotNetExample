@@ -2,7 +2,7 @@
 
 namespace DotNetExample
 {
-    class Person
+    class Person:MethodString
     {
         private DateTime _birthdate;
         public void SetBirthDate(DateTime birthdate)

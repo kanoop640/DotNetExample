@@ -13,6 +13,10 @@ namespace DotNetExample
         static void Main(string[] args)
         {
             /*Person person = new Person();
+            person.Id = 101;
+            MethodString st = new Person();
+            //st.SetBirthdate(new DateTime(15, 03, 1995));
+            Console.WriteLine(person.Id);
             person.SetBirthDate(new DateTime(1995, 03, 15));
             string date = person.GetBirthDate().ToString();
             Console.WriteLine(date);
@@ -31,7 +35,7 @@ namespace DotNetExample
             var cocki = new HttpCockies();
             cocki["name"] = "Imran";
             Console.WriteLine(cocki["name"]);*/
-            Type fc = Type.GetType("DotNetExample.Customer");
+            /*Type fc = Type.GetType("DotNetExample.Customer");
             Console.WriteLine("Name of the class :"+fc.Name);
             Console.WriteLine("Namespace : " + fc.Namespace);
             Console.WriteLine("FullName : " + fc.FullName);
@@ -66,8 +70,22 @@ namespace DotNetExample
             }
             ImplementationClass obj = new ImplementationClass();
             obj.Add(10, 20); obj.Sub(25, 10);
-            obj.Mul(5, 12);
-            Console.ReadLine();
+            obj.Mul(5, 12);*/
+            var emp1 = new PermanentEmployee();
+            emp1.FristName = "Imran";
+            emp1.LastName = "Mohamad";
+            emp1.AnnualSalary = 200000;
+            Console.WriteLine(emp1.GetFullName()+" got monthly salary is : "+ emp1.GetMonthlySalary());
+
+            var emp2 = new ContractEmployee();
+            emp2.FristName = "Anoop";
+            emp2.LastName = "Kumar";
+            emp2.HourlyPaid = 500;
+            emp2.WorkedHour = 50;
+            Console.WriteLine(emp2.GetFullName()+" got monthly salary is : "+emp2.GetMonthlySalary());
+            Console.ReadLine(); 
+
         }
+
     }
 }

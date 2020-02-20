@@ -43,11 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseEmployee.cs" />
+    <Compile Include="ContractEmployee.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="HttpCockies.cs" />
     <Compile Include="IMathComputation.cs" />
     <Compile Include="IMathComputation1.cs" />
     <Compile Include="ImplementationClass.cs" />
+    <Compile Include="MethodString.cs" />
+    <Compile Include="PermanentEmployee.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="primeFactor.cs" />
     <Compile Include="Program.cs" />
