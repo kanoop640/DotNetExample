@@ -4,3 +4,6 @@ C:\Users\Admin\source\repos\DotNetExample\bin\Debug\DotNetExample.pdb
 C:\Users\Admin\source\repos\DotNetExample\obj\Debug\DotNetExample.csprojAssemblyReference.cache
 C:\Users\Admin\source\repos\DotNetExample\obj\Debug\DotNetExample.exe
 C:\Users\Admin\source\repos\DotNetExample\obj\Debug\DotNetExample.pdb
+C:\Users\Admin\source\repos\DotNetExample\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\source\repos\DotNetExample\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\source\repos\DotNetExample\obj\Debug\DotNetExample.csproj.CopyComplete

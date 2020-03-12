@@ -9,7 +9,7 @@ namespace DotNetExample
     interface IMathComputation
     {
         // we can't declare any fields/variables under an interface
-        void Add(int x, int y);
+        int Add(int x, int y);
         void Sub(int a, int b);
     }
 }

@@ -9,5 +9,6 @@ namespace DotNetExample
     public abstract class MethodString
     {
         public int Id { get; set; }
+
     }
 }

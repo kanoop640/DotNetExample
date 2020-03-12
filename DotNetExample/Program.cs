@@ -5,86 +5,45 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Reflection;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace DotNetExample
 {
+    public delegate int Add(int x, int y);
     class Program
     {
         static void Main(string[] args)
         {
-            /*Person person = new Person();
-            person.Id = 101;
-            MethodString st = new Person();
-            //st.SetBirthdate(new DateTime(15, 03, 1995));
-            Console.WriteLine(person.Id);
-            person.SetBirthDate(new DateTime(1995, 03, 15));
-            string date = person.GetBirthDate().ToString();
-            Console.WriteLine(date);
-            string pattern = @"([a-zA-Z]+) (\d+)";
-            string str = "Your fullname is jan 2020 and you born at March 1995";
-            Regex rc = new Regex(pattern);
-            foreach (Match s in rc.Matches(str))
+            /* ImplementationClass mu = new ImplementationClass();
+             Add ad = new Add(mu.Add);
+             Console.ReadLine();*/
+            /*Customer cs = new Customer()
             {
-                Console.WriteLine("Match is {0} and found at index {1}", s.Value, s.Index);
-            }
-            Customer cs = new Customer();
-            cs.Name = "Anoop";
-            cs.Id = 101;
-            cs.Mob=8953997805;
-            Console.WriteLine("Your name is : "+cs.Name);
-            var cocki = new HttpCockies();
-            cocki["name"] = "Imran";
-            Console.WriteLine(cocki["name"]);*/
-            /*Type fc = Type.GetType("DotNetExample.Customer");
-            Console.WriteLine("Name of the class :"+fc.Name);
-            Console.WriteLine("Namespace : " + fc.Namespace);
-            Console.WriteLine("FullName : " + fc.FullName);
-            Console.WriteLine("Properies in Customer ");
-            PropertyInfo[] properties = fc.GetProperties();
-            foreach(PropertyInfo property in properties)
+                Name = "Anoop",
+                Id = 101,
+                Mob = 89539945,
+                Hobbies = new List<string>() { "reading", "Fishing" }
+            };
+            string str = JsonConvert.SerializeObject(cs);
+            Console.WriteLine(str);
+            File.WriteAllText(@"cs.json", str);*/
+            string path = @"D:\Anoop_kumar\CensusAnalyzer\CensusAnalyzer\StateCensusData.json";
+            //var val = File.ReadAllText(path);
+            dynamic value = JsonConvert.DeserializeObject(path);
+            foreach (var one in value)
             {
-                Console.WriteLine(property.PropertyType.Name+" "+ property.Name);
+                Console.WriteLine("{0},{1}", one.Statte, one.Population);
             }
-            Console.WriteLine();
-            Type pri = Type.GetType("DotNetExample.primeFactor");
-            //Type pri = typeof(primeFactor);
-            primeFactor prime = new primeFactor();
-            FieldInfo[] values = prime.GetType().GetFields();
-            foreach(FieldInfo value in values)
-            {
-                Console.WriteLine("Field value :"+value.GetValue(prime));
-            }
-            Console.WriteLine("Name of the class :"+pri.Name);
-            Console.WriteLine("Method in primeFator ");
-            MethodInfo[] methods = pri.GetMethods();
-            foreach (MethodInfo method in methods)
-            {
-                Console.WriteLine("Type of method :"+method.ReturnType.Name + " ," +"Method name :"+ method.Name);
-            }
-            Console.WriteLine();
-            Console.WriteLine("Constructor in Custorme ");
-            ConstructorInfo[] constructors = fc.GetConstructors();
-            foreach (ConstructorInfo constructor in constructors)
-            {
-                Console.WriteLine(constructor.ToString());
-            }
-            ImplementationClass obj = new ImplementationClass();
-            obj.Add(10, 20); obj.Sub(25, 10);
-            obj.Mul(5, 12);*/
-            var emp1 = new PermanentEmployee();
-            emp1.FristName = "Imran";
-            emp1.LastName = "Mohamad";
-            emp1.AnnualSalary = 200000;
-            Console.WriteLine(emp1.GetFullName()+" got monthly salary is : "+ emp1.GetMonthlySalary());
+            //foreach (var line in value)
+            //{
+            //    var val1 = line.Split(',');
+            //    var val = JsonConvert.SerializeObject(val1, Formatting.Indented);
+            //    File.WriteAllText(@"hello.json", val);
+            //    Console.WriteLine(val);
+            //}
 
-            var emp2 = new ContractEmployee();
-            emp2.FristName = "Anoop";
-            emp2.LastName = "Kumar";
-            emp2.HourlyPaid = 500;
-            emp2.WorkedHour = 50;
-            Console.WriteLine(emp2.GetFullName()+" got monthly salary is : "+emp2.GetMonthlySalary());
-            Console.ReadLine(); 
-
+            Console.Read();
         }
 
     }

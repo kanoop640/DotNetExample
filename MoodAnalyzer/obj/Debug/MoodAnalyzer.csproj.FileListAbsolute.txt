@@ -1,0 +1,6 @@
+C:\Users\Admin\source\repos\MoodAnalyzer\bin\Debug\MoodAnalyzer.exe.config
+C:\Users\Admin\source\repos\MoodAnalyzer\bin\Debug\MoodAnalyzer.exe
+C:\Users\Admin\source\repos\MoodAnalyzer\bin\Debug\MoodAnalyzer.pdb
+C:\Users\Admin\source\repos\MoodAnalyzer\obj\Debug\MoodAnalyzer.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\MoodAnalyzer\obj\Debug\MoodAnalyzer.exe
+C:\Users\Admin\source\repos\MoodAnalyzer\obj\Debug\MoodAnalyzer.pdb

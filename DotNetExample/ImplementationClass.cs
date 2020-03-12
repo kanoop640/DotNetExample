@@ -2,19 +2,20 @@
 
 namespace DotNetExample
 {
-    class ImplementationClass :IMathComputation1
+    class ImplementationClass : IMathComputation1
     {
-        public void Add(int x, int y)
+        public int Add(int x, int y)
         {
-            Console.WriteLine(x+y);
+            Console.WriteLine(x + y);
+            return x + y;
         }
         public void Sub(int a, int b)
         {
-            Console.WriteLine(a-b);
+            Console.WriteLine(a - b);
         }
         public void Mul(int a, int b)
         {
-            Console.WriteLine(a*b);
+            Console.WriteLine(a * b);
         }
     }
 }

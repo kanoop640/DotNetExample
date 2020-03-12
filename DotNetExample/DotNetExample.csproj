@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>D:\Anoop_kumar\CensusAnalyzer\CensusAnalyzer\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,11 +49,15 @@
     <Compile Include="BaseEmployee.cs" />
     <Compile Include="ContractEmployee.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="HttpCockies.cs" />
     <Compile Include="IMathComputation.cs" />
     <Compile Include="IMathComputation1.cs" />
     <Compile Include="ImplementationClass.cs" />
+    <Compile Include="MathFunction.cs" />
     <Compile Include="MethodString.cs" />
+    <Compile Include="Organization.cs" />
+    <Compile Include="OrganizationEnumerator.cs" />
     <Compile Include="PermanentEmployee.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="primeFactor.cs" />
@@ -60,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
